@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-bqgc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0022-tenant/tkrw-pr714-0075-0022-app/devfile-sample-bqgc@sha256:6e6ce3c892819ba4f5a2abed6bd30c0d07edd9331ba415da3f9dab22e7a53d7d
+        name: my-nodejs
+        resources: {}
+status: {}
